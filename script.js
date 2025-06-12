@@ -5,6 +5,8 @@ const cardsContainer = document.getElementById('cards-container');
 
 let flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
 
+
+
 function saveAndRenderCards() {
   localStorage.setItem('flashcards', JSON.stringify(flashcards));
   renderCards();
@@ -44,3 +46,5 @@ addCardBtn.addEventListener('click', () => {
 });
 
 renderCards(); // initial load
+
+

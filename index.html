@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flashcards</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Flashcards</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🧠 Flashcard App</h1>
+    <div class="container">
+        <h1>Flashcard App</h1>
+        <h6>Basic version: Uses browser local storage</h6>
 
-    <div class="card-form">
-      <input type="text" id="question" placeholder="Enter question..." />
-      <input type="text" id="answer" placeholder="Enter answer..." />
-      <button id="addCardBtn">Add Flashcard</button>
+        <div class="in_form">
+            <input type="text" id="question" placeholder="Enter question...">
+            <input type="text" id="answer" placeholder="Enter answer...">
+            <button id="addCardBtn">Add Flashcard</button>
+            <button id="quiz">Self Test</button>
+        </div>
+
+        <div id="cards-container">
+            
+        </div>
     </div>
 
-    <div id="cards-container">
-
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

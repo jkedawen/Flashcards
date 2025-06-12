@@ -1,48 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 1rem;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .card-form {
-    margin-bottom: 20px;
-  }
-  
-  .card-form input {
-    padding: 10px;
-    width: calc(100% - 22px);
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 5px #ccc;
-    position: relative;
-  }
-  
-  .card .delete {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: red;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
+  font-family: sans-serif;
+  color: #aefeff;
+  background: darkslategray;
+  margin: 0;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.in_form input {
+  color: #2F3941;
+  background: #f2f3f4;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.in_form input:focus {
+  border-color: #3498db;
+}
+.in_form button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f2f3f4;
+  background: #3498db;
+  transition: color 1s ease;
+  transition: background-color 0.3s;
+}
+.in_form #quiz {
+  margin-left: 10px;
+  background: rgb(15, 148, 15);
+}
+.in_form button:hover {
+  color: #202020;
+  background: #70c0f5;
+}
+.in_form #quiz:hover {
+  color: #202020;
+  background: rgb(103, 189, 103);
+}
+
+.card {
+  color: #f2f3f4;
+  background: #202020;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px #ccc;
+  position: relative;
+}
+
+.card .delete {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: orange;
+  cursor: pointer;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
