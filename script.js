@@ -13,19 +13,18 @@ function saveAndRenderCards() {
 }
 
 function renderCards() {
-  cardsContainer.innerHTML = '';
-  flashcards.forEach((card, index) => {
-    const cardDiv = document.createElement('div');
-    cardDiv.className = 'card';
-
-    cardDiv.innerHTML = `
-      <strong>Q:</strong> ${card.question} <br>
-      <strong>A:</strong> ${card.answer}
-      <span class="delete" onclick="deleteCard(${index})"><i class="fas fa-trash"></i></span>
-    `;
-
-    cardsContainer.appendChild(cardDiv);
-  });
+    cardsContainer.innerHTML = '';
+    flashcards.forEach((card, index) => {
+        const cardDiv = document.createElement('div');
+        cardDiv.className = 'card';
+        cardDiv.innerHTML = `
+            <strong>Q:</strong> ${card.question} <br>
+            <strong>A:</strong> ${card.answer}
+            <span class="delete" onclick="deleteCard(${index})"><i class="fas fa-trash"></i></span>
+            <span class="edit" onclick="editCard(${index})"><i class="fa-solid fa-pen-to-square"></i></span>
+        `;
+        cardsContainer.appendChild(cardDiv);
+    });
 }
 
 function deleteCard(index) {
