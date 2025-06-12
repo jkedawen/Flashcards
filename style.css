@@ -104,35 +104,3 @@ body {
     }
 }
 
-:root {
-  --bg-color: #1e1e1e;
-  --text-color: #f2f3f4;
-  --card-bg: #202020;
-  --input-bg: #f2f3f4;
-  --input-text: #2f3941;
-  --btn-bg: #3498db;
-  --btn-hover: #005791;
-}
-
-[data-theme="light"] {
-  --bg-color: #ffffff;
-  --text-color: #1e1e1e;
-  --card-bg: #f7f7f7;
-  --input-bg: #ffffff;
-  --input-text: #1e1e1e;
-  --btn-bg: #3498db;
-  --btn-hover: #005791;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
-  transition: background 0.3s ease, color 0.3s ease;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 1rem;
-}
