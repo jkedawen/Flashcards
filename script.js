@@ -21,7 +21,7 @@ function renderCards() {
     cardDiv.innerHTML = `
       <strong>Q:</strong> ${card.question} <br>
       <strong>A:</strong> ${card.answer}
-      <span class="delete" onclick="deleteCard(${index})">&times;</span>
+      <span class="delete" onclick="deleteCard(${index})"><i class="fas fa-trash"></i></span>
     `;
 
     cardsContainer.appendChild(cardDiv);

@@ -18,16 +18,13 @@ body {
     padding: 10px;
     width: 100%;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s;
 }
 .in_form input:focus {
-     border-color: #3498db;
-}
-.in_form input:hover {
-    transform: scale(1.03);
+     border-color: #9d8fdd;
 }
 .in_form button {
     margin-right: 10px;
@@ -40,19 +37,23 @@ body {
     transition: background-color 0.3s;
 }
 .in_form #quiz {
-  margin-left: 10px;
   background: rgb(15, 148, 15);
 }
+.in_form input:hover {
+    opacity: 0.95;
+    transform: scale(1.03);
+    transition: transform 0.3s ease, color 0.3s ease ;
+}
 .in_form button:hover {
+    opacity: 0.95;
     color: #202020;
     transform: scale(1.03);
-    transition: color .3s ease;
+    transition: transform 0.3s ease, color 0.3s ease ;
     background: #70c0f5;
 }
 .in_form #quiz:hover {
+    opacity: 0.95;
     color: #202020;
-    transform: scale(1.03);
-    transition: color .3s ease;
     background: rgb(103, 189, 103);
 }
 .card {
@@ -77,4 +78,20 @@ body {
   color: orange;
   cursor: pointer;
   font-weight: bold;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .in_form input,
+  .in_form button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .in_form button {
+    margin-right: 0;
+  }
+}
